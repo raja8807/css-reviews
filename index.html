@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Formatting</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <ol>
+                <h1 class="head">CSS Fonts :</h1>
+                <li>
+                    <h2 id="serif">Serif</h2>
+                </li>
+                <li>
+                    <h2 id="sans-serif">Sans Serif</h2>
+                </li>
+                <li>
+                    <h2 id="mono">Monospace</h2>
+                </li>
+                <li>
+                    <h2 id="cursive">Cursive</h2>
+                </li>
+                <li>
+                    <h2 id="fantasy">Fantasy</h2>
+                </li>
+                <li>
+                    <h2 id="poppins">Google-font <q>Poppins</q></h2>
+                </li>
+            </ol>
+        </div>
+
+        <div class="box">
+            <ul>
+                <h1 class="head">Font Size</h1>
+                <li>
+                    <p id="px">font Size : 32px</p>
+                </li>
+                <li>
+                    <p id="size">font Size : small</p>
+                    <input type="text" id="sizeName" placeholder="Enter a font size">
+                </li>
+                <li>
+                    <p id="perc">font Size : 200%</p>
+                </li>
+                <li>
+                    <p id="em">font Size : 2em</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <ul>
+            <h1 class="head">Text Decoration</h1>
+            <li>
+                <p id="underline">Underline Double</p>
+            </li>
+            <li>
+                <p id="overline">overline dotted</p>
+            </li>
+            <li>
+                <p id="lineT">Line Through red</p>
+            </li>
+            <li>
+                <p id="com">underline 2px blue</p>
+            </li>
+            <li>
+                <p id="italic">Italic</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        let size = document.querySelector("#size")
+        let sizeName = document.querySelector("#sizeName")
+
+        sizeName.addEventListener("change", () => {
+            size.style.fontSize = sizeName.value
+            size.innerText = "font zSize : " + sizeName.value
+        })
+    </script>
+</body>
+
+</html>

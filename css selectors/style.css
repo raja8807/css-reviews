@@ -1,0 +1,89 @@
+/* universal selector */
+*{
+    text-align: center;
+}
+
+
+/* elements selector */
+h1{
+    color: red;
+}
+
+
+/* classname selector */
+.heading{
+    color: green;
+}
+
+/* id name selector */
+#head{
+    color: blue;
+}
+
+
+/* attribute selector */
+a[href = "#"]{
+    font-size: 40px;
+    color: black;
+}
+
+
+/* pseudo class selector */
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: gray;
+}
+
+button:active{
+    transform: scale(2);
+}
+
+button:focus{
+    background-color: red;
+    transform: scale(2);
+}
+
+
+/* pseudo elements selector */
+#lorem::first-line{
+    background: yellow;
+    color: green;
+}
+
+
+#lorem::first-letter{
+    font-size: 50px;
+}
+
+#sib::before{
+    content: "Raja.";
+    font-size: 40px;
+    background-color: red;
+}
+
+#sib::after{
+    content: "after";
+    font-size: 40px;
+    background-color: green;
+}
+
+
+/* combinator selector */
+#div1 > p{
+    color: aqua;
+}
+
+#sib + p{
+    color: blue;
+}
+
+#sib2 ~ p{
+    color: red;
+}
+
+#div2 p{
+    font-size: 60px;
+}

@@ -1,0 +1,125 @@
+div{
+    font-size: 28px;
+}
+
+.box{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(127, 127, 127, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+}
+
+.box1{
+    display: inline-block;
+}
+
+
+#p1{
+    border: 1px solid red;
+    display: inline;
+    margin-right: 3px;
+}
+
+#p2{
+    border: 1px solid red;
+    display: inline;
+}
+
+#lor1{
+    color: red;
+    display: block;
+    background-color: aqua;
+    margin:20px 0px;
+}
+
+.boxG{
+    margin: 10px;
+    padding: 20px;
+    background-color: #e5e5e5;
+    border: 2px dotted black;
+}
+
+.gridContainer{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+#box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#box4{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#disNone{
+    display: none;
+}
+
+.table{
+    display: table;
+    border: 2px solid blue;
+}
+
+.tblCap{
+    display: table-caption;
+    text-align: center;
+}
+
+
+.row{
+    display: table-row;
+}
+
+.cell{
+    display: table-cell;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.box-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(127, 127, 127, 0.4);
+}
+
+#smallWrapper{
+    display: inherit;
+}
+
+.smallBox{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    margin: 5px;
+    border-radius: 5px;
+}

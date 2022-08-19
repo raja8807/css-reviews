@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <form action="" id="form">
+            <fieldset style="width: 400px;" id="box">
+                <fieldset class="field">
+                    <legend>Profile</legend>
+
+                    <label for="fn">First Name</label>
+                    <input type="text" id="fn" name="fname" required>
+                    <br>
+
+                    <label for="ln">Last Name</label>
+                    <input type="text" id="ln" name="lname">
+                    <br>
+
+                    <label for="dob">DOB</label>
+                    <input type="date" name="dob" id="dob">
+                    <br>
+
+                    <input type="radio" name="gender" value="f" id="rf">
+                    <label for="rf">Female</label>
+
+                    <input type="radio" name="gender" value="m" id="rm">
+                    <label for="rm">Male</label>
+    
+                </fieldset>
+                
+    
+                <fieldset class="field">
+                    <legend>Contact</legend>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="abcd@gmail.com" readonly>
+                    <br>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone">
+
+                    <textarea name="address" id="" cols="30" rows="3" placeholder="Address.."></textarea>
+                </fieldset>
+    
+    
+    
+    
+    
+                <fieldset disabled class="field">
+                    <legend>Password</legend>
+    
+                    <label for="pwd">Create Password</label>
+                    <input type="password"><br>
+                    <label for="pwd">Confirm Password</label>
+                    <input type="password"><br>
+                    <br>
+
+                    <input type="checkbox" name="exp" id="" checked>
+                    <label for="exp">Remember Password</label><br>
+                </fieldset>
+                <input type="submit" name="submit">
+
+                <input type="button" value="Cancel">
+
+                <input type="button" value="Clear">
+            </fieldset>
+        </form>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
