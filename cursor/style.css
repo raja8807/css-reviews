@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    width: 120px;
+    height: 70px;
+    background-color: orange;
+    margin: 8px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+p{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgb(255, 136, 0);
+    border: 3px solid white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#box1{
+    cursor: alias;
+}
+
+#box2{
+    cursor: all-scroll;
+}
+
+#box3{
+    cursor: auto;
+}
+
+#box4{
+    cursor: cell;
+}
+#box5{
+    cursor: col-resize;
+}
+#box6{
+    cursor: context-menu;
+}
+#box7{
+    cursor: copy;
+}
+#box8{
+    cursor: crosshair;
+}
+#box9{
+    cursor: e-resize;
+}
+#box10{
+    cursor:ew-resize;
+}
+#box11{
+    cursor:grab;
+}
+#box12{
+    cursor:grabbing;
+}
+#box13{
+    cursor:help;
+}
+#box14{
+    cursor:move;
+}
+#box15{
+    cursor:n-resize;
+}
+#box16{
+    cursor:ne-resize;
+}
+#box17{
+    cursor: nesw-resize;
+}
+#box18{
+    cursor:no-drop;
+}
+#box19{
+    cursor: none;
+}
+#box20{
+    cursor: not-allowed;
+}
+#box21{
+    cursor:ns-resize;
+}
+#box22{
+    cursor:nw-resize;
+}
+#box23{
+    cursor:nwse-resize;
+}
+#box24{
+    cursor:pointer;
+}
+#box25{
+    cursor:progress;
+}
+#box26{
+    cursor:row-resize;
+}
+#box27{
+    cursor:s-resize;
+}
+#box28{
+    cursor:se-resize;
+}
+#box29{
+    cursor:sw-resize;
+}
+#box30{
+    cursor:text;
+}
+#box31{
+    cursor:vertical-text;
+}
+#box32{
+    cursor:w-resize;
+}
+#box33{
+    cursor:wait;
+}
+#box34{
+    cursor:zoom-in;
+}
+#box35{
+    cursor:zoom-out;
+}
+#box36{
+    cursor:text;
+}
+

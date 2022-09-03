@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.2s;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color:#387e72;
+    background-color:#090910;
+    padding: 25px 0px;
+    position: sticky;
+    top: 0;
+    font-family: 'Kanit', sans-serif;
+    /* box-shadow:0px 2px 5px 1px #ff5f00; */
+    border-bottom: #ff5f00 4px solid;
+}
+
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    color: #fba1a1;
+    color: #ff5f00;
+}
+
+.dot{
+    color: #eeeeee;
+}
+
+
+.nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.nav ul li a:hover{
+    color: #ff5f00;
+
+}
+
+
+
+.nav ul li:hover{
+    /* font-weight: bold; */
+    border: none;
+}
+
+.nav{
+    display: initial;
+}
+
+.toogleWrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toogle{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    width: 28px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+    border-radius: 2px;
+    /* background-color: #fbc5c5; */
+    background-color: #ff5f00;
+
+}
+
+
+@media only screen and (max-width:768px){
+    .headerWrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .nav{
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .nav ul li{
+        list-style: none;
+        display: block;
+        text-align: center;
+        padding: 5px;
+        /* border-bottom: 1px solid #eeeeee;    */
+        border-bottom: 2px solid #ff5f00;   
+
+    }
+
+    nav ul li:hover{
+        /* color: #fba1a1;
+        font-weight: bold; */
+        /* background-color:#887ab0 ; */
+        background-color:#ff5f00;
+        transform: scale(1.2);
+        border-radius: 2px;
+    }
+
+    .nav ul li a:hover{
+        color: #eeeeee;
+    }
+
+    .toogle{
+        display: initial;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .nav{
+        display: block !important;
+    }
+} 
+
+
+
+
+

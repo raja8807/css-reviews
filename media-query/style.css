@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    background-color: #e5e5e5;
+    padding: 15px;
+    height: 100vh;
+    width: 87%;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
+.box{
+    /* width: 90%; */
+    height: 100%;
+    background-color: bisque;
+    /* padding: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+    border-radius: 25px;
+    /* padding: 20px; */
+    border: 17px solid black;
+    position: relative;
+}
+
+.box::after{
+    content:  "Width - 100%";
+    font-size: 20px;
+}
+
+.btm{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    bottom: 0px;
+}
+
+
+
+.notch{
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.cam{
+    width: 15px;
+    background-color: grey;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.speaker{
+    width: 100px;
+    background-color: white;
+    height: 15px;
+    border-radius: 10px;
+    /* border: 3px solid white; */
+}
+
+
+
+
+
+@media only screen and (max-width : 600px)  {
+    .box{
+        background: red;
+    }
+    .box::after{
+        content: "Less than 600px - Extra Small Mobiles";
+    }
+} 
+
+@media only screen and (min-width : 600px){
+    .box{
+        background-color: green;
+    }
+    .box::after{
+        content: "between 600px and 768px- Small Mobiles, tablets";
+    }
+}
+
+
+@media only screen and (min-width : 768px){
+    .box{
+        background-color: blue;
+    }
+    .box::after{
+        content: "between 768px and 992px - medium devices";
+    }
+}
+@media only screen and (min-width : 992px){
+    .box{
+        background-color:bisque;
+    }
+    .box::after{
+        content: "between 992px and 1200px - Large Devices - laptops";
+    }
+}
+@media only screen and (min-width : 1200px){
+    .box{
+        background-color:cadetblue;
+    }
+    .box::after{
+        content: "more than 1200px - Extra large devices";
+    }
+}
+
+
+
+@media only screen and (orientation : landscape){
+    .box{
+        background-color: blue;
+    }
+    .box::after{
+        content: "Landscape";
+        font-size: 20px;
+    }
+}
+
+@media only screen and (orientation : portrait){
+    .box{
+        background-color:blueviolet;
+    }
+    .box::after{
+        content: "Portrait";
+        font-size: 20px;
+    }
+}
