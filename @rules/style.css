@@ -1,5 +1,5 @@
 /* @import url(./style2.css); */
-/* @import "./style2.css" */
+/* @import "./style2.css"; */
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
@@ -9,7 +9,8 @@
 }
 
 p{
-    font-size: 30px;
+    font-size: 38px;
+    /* font-family: 'dancing script'; */
     font-family: 'dancing script' !important;
     font-family: myFont;
 }

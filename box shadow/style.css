@@ -1,0 +1,35 @@
+*{
+    transition: 0.2s;
+}
+
+body{
+    background-color: #e5e5e5;
+
+}
+
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px white inset , -2px -2px 2px 2px gray inset ;
+}
+
+.outer:active{
+    box-shadow: 2px 2px 2px 2px gray inset , -2px -2px 2px 2px white inset ;
+
+}
+
+/* .inner{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px gray inset , -2px -2px 2px 2px white inset ;
+}
+
+.inner:active{
+    box-shadow: 2px 2px 2px 2px white inset , -2px -2px 2px 2px gray inset ;
+
+} */
